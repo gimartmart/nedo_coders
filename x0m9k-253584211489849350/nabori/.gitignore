@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+cache/
+bot_tokens.json
+user_data/

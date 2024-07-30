@@ -1,0 +1,40 @@
+----------- Guide how to translate bot -----------
+! Warning: command groups are behaving differently!
+! If your group is SlashCommandGroup("profile", "Profile related commands"),
+! then any command in that group will be treated like individual command when
+! translation proccess accures.
+! For example: let's add "profile show" command to the group.
+! Then we'll get profile_show command in bot_prepare_cog().
+!!!! When translating command names, no spaces allowed! use '_'.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+================== Tips ====================
+To translate generic option names like "user", "member", "amount", use this:
+- /locale ru generic_opt_name_member участник
+- /locale ru generic_opt_desc_member Выберите участника.
+==================
+
+1. If you want to translate command name/description:
+  - Make sure you set 'translation_db_name' and 'translation_schemes' in your config.json;
+  - Set 'debug.is_debug = true' in config.json, then with built-in command
+    '/locale' translate command name and description like so:
+    Name: /locale <language> cmd_name_<command name> <translation for the language>
+    Description: /locale <language> cmd_desc_<command name> <translation for the language>
+    ---- Example:
+      Name: /locale ru cmd_name_profile профиль
+      Description: /locale ru cmd_desc_profile Просмотреть профиль.
+
+    ---- Advanced example (command groups) [Command: profile set_status]
+      Name of the group: /locale ru group_name_profile профиль
+      Description of the group: /locale ru group_desc_profile Команды профиля.
+      ++++++++++++
+      Name of the command: /locale ru cmd_name_profile_set_status установить_статус
+      Description of the command: /locale ru cmd_name_profile_set_status Устанавливает статус в профиле.
+
+2. If you want to translate the options of a command:
+  - Same as 1 paragraph, but you'll need to type:
+    Option name: /locale <language> cmd_<command name>_opt_name_<option name> <translation for the language>
+    Option description: /locale <language> cmd_<command name>_opt_desc_<option name> <translation for the language>
+    ---- Example:
+      Option name: /locale ru cmd_profile_set_status_opt_name_status статус
+      Option description: /locale ru cmd_profile_set_status_opt_desc_status Статус Вашего профиля.

@@ -1,0 +1,74 @@
+{
+  "debug": false,
+  "verbose_debug": true,
+  "slash_commands_guild_ids": [1246438668890279956],
+  "debug_slash_commands_guild_ids": [734322663429898261],
+
+  "api_base_url": "http://127.0.0.1:8089/v1",
+
+  "db_name": "icecream_jax",
+
+  "anticrash": {
+    "allowed_bot_ids": []
+  },
+
+  "translation_db_name": "icecream_translation",
+  "translation_schemes": ["icecream_base", "miracle_mcrity", "icecream_lite", "icecream_f5"],
+  "translation_default_language": "en-US",
+  "cache_translations": true,
+
+  "all_languages": ["ru", "en-US"],
+  "default_language": "ru",
+
+  "auto_add_min_maxint_ds_to_options": false,
+
+  "extensions": [
+    "cogs.superadmin",
+    "cogs.context_menu"
+  ],
+
+  "games": ["csgo", "dota2"],
+
+  "default_cmd_description": "-",
+  
+  "defer_cmds": ["coinflip", "profile", "top"],
+  "defer_cmds_no_ephemeral": ["coinflip", "profile", "top"],
+
+  "permissions": {
+    "dev": -1024,
+    "server_owner": -512,
+    "superadmin": -256,
+    "admin_plus": 32,
+    "admin": 64,
+    "moderator": 127,
+    "eventer": 130,
+    "support": 140,
+    "user": 255
+  },
+
+  "bot_info": {
+    "invite_version": "",
+    "invite_global": "",
+    "dev_ids": [467417195140612106]
+  },
+
+  "cache": {
+    "flush_old_avatars_on_start": true,
+    "flush_old_avatars_time": 1800
+  },
+
+  "awards": {
+    "spider_id": 1029791933649932418
+  },
+
+  "integrations": {
+    "lite": {
+      "enabled": true,
+      "bot_id": 1070864659789402112,
+      "guild_id": 1071732758587650048,
+      "channels": {
+        "balance": 1071733056743932004
+      }
+    }
+  }
+}

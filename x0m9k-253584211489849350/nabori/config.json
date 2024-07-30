@@ -1,0 +1,52 @@
+{
+  "debug": false,
+  "verbose_debug": true,
+  "slash_commands_guild_ids": [0],
+  "debug_slash_commands_guild_ids": [0],
+
+  "api_base_url": "http://127.0.0.1:8089/v1",
+
+  "db_name": "icecream_jax",
+
+  "translation_db_name": "icecream_translation",
+  "translation_schemes": ["icecream_base", "miracle_mcrity", "icecream_f5", "icecream_lite"],
+  "translation_default_language": "en-US",
+  "cache_translations": true,
+
+  "all_languages": ["ru", "en-US"],
+  "default_language": "ru",
+
+  "auto_add_min_maxint_ds_to_options": false,
+
+  "extensions": [
+    "cogs.nabori"
+  ],
+
+  "default_cmd_description": "-",
+  
+  "defer_cmds": [],
+  "defer_cmds_no_ephemeral": [],
+
+  "permissions": {
+    "dev": -1024,
+    "server_owner": -512,
+    "superadmin": -256,
+    "admin_plus": 32,
+    "admin": 64,
+    "moderator": 127,
+    "eventer": 130,
+    "support": 140,
+    "user": 255
+  },
+
+  "bot_info": {
+    "invite_version": "",
+    "invite_global": "",
+    "dev_ids": []
+  },
+
+  "cache": {
+    "flush_old_avatars_on_start": true,
+    "flush_old_avatars_time": 1800
+  }
+}

@@ -1,0 +1,31 @@
+{
+    "profile_pb": "profile/pb.png",
+    "profile_pb_end": "profile/pb_end.png",
+    "profile_pb_bg": "profile/pb_bg.png",
+    "profile_ava_border": "profile/avatar_border.png",
+    "profile_marry_border": "profile/marry_border.png",
+    "profile_main_ava_mask": "profile/avatar_main_mask.png",
+    "profile_marry_ava_mask": "profile/avatar_marry_mask.png",
+
+    "lprofile_bg": "lprofile/bg.png",
+    "lprofile_border": "lprofile/border.png",
+    "lprofile_mask": "lprofile/mask.png",
+
+    "top_border": "top/avatar_border.png",
+    "top_mask": "top/avatar_mask.png",
+    "top_small_mask": "top/avatar_small_mask.png",
+    "top_small_border": "top/avatar_small_border.png",
+
+    "banner_bg": "banner/bg.png",
+    "banner_border": "banner/border.png",
+    "banner_mask": "banner/avatar_mask.png",
+
+    "minefield_bg": "games/minefield/bg.png",
+    "minefield_bomb": "games/minefield/bomb.png",
+    "minefield_questionmark": "games/minefield/question.png",
+    "minefield_select": "games/minefield/select.png",
+    "minefield_select_bomb": "games/minefield/select_bomb.png",
+    "minefield_clear": "games/minefield/clear.png",
+    "minefield_win": "games/minefield/won_overlay.png",
+    "minefield_lose": "games/minefield/lost_overlay.png"
+}
